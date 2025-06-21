@@ -9,7 +9,9 @@ A neural machine translation system that translates between Hmong (Hmong) and Th
 - **Real-time Translation**: Instant translation with API endpoints
 - **Clipboard Integration**: Copy/paste functionality for easy text handling
 - **Responsive Design**: Works on desktop and mobile devices
-- **High-Quality Models**: Fine-tuned transformer models with BLEU scores up to -
+- **High-Quality Models**: Fine-tuned transformer models with BLEU scores up to 82.5929
+
+
 
 ## 🚀 Quick Start
 
@@ -95,7 +97,7 @@ print(result['translated_text'])  # "ฉันอาศัยอยู่ใน�
 | Model | Direction | BLEU Score | Training Steps |
 |-------|-----------|------------|----------------|
 | model-th-hmn-3 | Hmong→Thai | - | 34,100 |
-| model-th-hmn-4 | Thai→Hmong | - | 63,900 |
+| model-th-hmn-4 | Thai→Hmong | 82.5929 | 63,900 |
 
 ### Training Details
 - **Dataset Size**: 12,781 sentence pairs
