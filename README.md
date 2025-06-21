@@ -9,7 +9,7 @@ A neural machine translation system that translates between Hmong (Hmong) and Th
 - **Real-time Translation**: Instant translation with API endpoints
 - **Clipboard Integration**: Copy/paste functionality for easy text handling
 - **Responsive Design**: Works on desktop and mobile devices
-- **High-Quality Models**: Fine-tuned transformer models with BLEU scores up to 82.4
+- **High-Quality Models**: Fine-tuned transformer models with BLEU scores up to -
 
 ## 🚀 Quick Start
 
@@ -23,7 +23,7 @@ A neural machine translation system that translates between Hmong (Hmong) and Th
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/YangNobody12/MachineTranslation-th-hmn.git
    cd Translation
    ```
 
