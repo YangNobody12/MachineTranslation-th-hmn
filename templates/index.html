@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="translator-container">
+        <h1>TranslatorUI by Bea</h1>
+
+        <div class="language-selectors">
+            <select id="source-lang">
+                <option value="hmn">ภาษาม้ง</option>
+                <option value="th">ภาษาไทย</option>
+            </select>
+
+            <button id="swap-btn" title="Swap languages">⇄</button>
+
+            <select id="target-lang">
+                <option value="th">ภาษาไทย</option>
+                <option value="hmn">ภาษาม้ง</option>
+            </select>
+        </div>
+
+        <div class="box-wrapper">
+            <textarea id="input-text" class="common-box" placeholder="ป้อนข้อความ"></textarea>
+            <button class="box-action-btn" id="paste-btn" title="วางจากคลิปบอร์ด">วาง</button>
+        </div>
+
+        <div class="actions">
+            <button id="clear-btn">Clear</button>
+            <button id="translate-btn">Translate</button>
+        </div>
+
+        <div class="box-wrapper">
+            <div id="translation-output" class="common-box" aria-label="Translation output"></div>
+            <button class="box-action-btn" id="copy-btn" title="คัดลอกไปยังคลิปบอร์ด">คัดลอก</button>
+        </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>   
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+body {
+  font-family: 'Noto Sans Thai', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.translator-container {
+  background: white;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  min-height: calc(90vh - 4rem);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.translator-container h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.language-selectors {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.language-selectors select,
+.language-selectors button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #999;
+  outline: none;
+}
+
+#swap-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  color: #333;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+#swap-btn:hover {
+  color: #007bff;
+}
+
+.box-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  /* กำหนดความสูงเพื่อให้ตำแหน่งปุ่มแน่นอน (optional) */
+  min-height: 140px;  /* ให้สูงพอรองรับ textarea และปุ่ม */
+}
+
+.box-action-btn {
+  position: absolute;
+  bottom: 12px;  /* เลื่อนลงเล็กน้อยให้พอดี */
+  right: 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  padding: 6px 12px;  /* เพิ่ม padding แนวนอนให้กว้างขึ้น */
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  min-width: 60px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.box-action-btn:hover {
+  background-color: #ddd;
+}
+
+
+.common-box {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: none;
+  overflow: hidden;
+  min-height: 120px;
+}
+
+#input-text {
+  overflow-y: auto;
+}
+
+#translation-output {
+  background-color: #f0f0f0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 16px;
+  min-height: 120px;
+  overflow-y: auto;
+}
+
+.box-action-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  min-width: 60px;
+  text-align: center;
+}
+
+.box-action-btn:hover {
+  background-color: #ddd;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.actions button {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+}

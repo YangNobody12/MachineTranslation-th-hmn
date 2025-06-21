@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environment
+.env
+.venv/
+venv/
+env/
+*.env
+
+# W&B logs
+wandb/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+model-th-hmn-3/
+model-th-hmn-4/
