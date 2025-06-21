@@ -94,8 +94,8 @@ print(result['translated_text'])  # "ฉันอาศัยอยู่ใน�
 
 | Model | Direction | BLEU Score | Training Steps |
 |-------|-----------|------------|----------------|
-| model-th-hmn-3 | Hmong→Thai | ~82.4 | 34,100 |
-| model-th-hmn-4 | Thai→Hmong | ~82.4 | 63,900 |
+| model-th-hmn-3 | Hmong→Thai | - | 34,100 |
+| model-th-hmn-4 | Thai→Hmong | - | 63,900 |
 
 ### Training Details
 - **Dataset Size**: 12,781 sentence pairs
